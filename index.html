@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Etch-A-Sketch</title>
+
+      <link rel="icon" href="https://fav.farm/🖌️" />
+      <link rel="stylesheet" href="./main.css">
+
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+      <div class="content">
+            <h1>Etch-A-Sketch 🖌️📄</h1>
+            <div class="container">
+                  <div class="options">
+                        <div class="size">
+                              <label for="size">Toogle
+                                    🖌️ Size:</label>
+                              <span class="size__input">
+                                    <input type="range" value="16" name="size" min="1" max="50">
+                                    <span size__value>16</span>
+                              </span>
+                        </div>
+                        <div class="color">
+                              <label for="color">Choose 🖌️ Color:</label>
+                              <span class="color__input">
+                                    <input type="color" value="16" name="color">
+                                    <span color__value>black</span>
+                              </span>
+                        </div>
+                        <div class="random__btn">
+                              <p>Random 🖌️ Colors:</p>
+                              <button id="random" class="btn">Random 🔀</button>
+                        </div>
+                        <div class="settings__btn">
+                              <button id="eraser" class="btn">Eraser 🧽</button>
+                              <button id="reset" class="btn">Reset ↩️</button>
+                        </div>
+
+                  </div>
+                  <div class="board">
+
+                  </div>
+
+            </div>
+            <footer>
+                  <p>
+                        <a href="https:iamntwali.netlify.app">Iam-Ntwali</a>
+                        &copy <span class="year"></span>.
+                  </p>
+            </footer>
+      </div>
+      <script src="./script.js"></script>
+</body>
+
+</html>
