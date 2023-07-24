@@ -22,36 +22,39 @@
                   <div class="options">
                         <div class="size">
                               <label for="size">Toogle
-                                    Grid Size:</label>
+                                    Zoom 🔎:</label>
                               <span class="size__input">
-                                    <input type="range" name="size" value="16" min="1" max="50">
-                                    <span>(1 - 50)</span>
+                                    <input type="range" name="size" value="50" min="1" max="100">
+                                    <span>(1 - 100)</span>
                               </span>
-                              <p> Number of Grid:
-                                    <span size__value>16</span>
+                              <p> Current Zoom:
+                                    <span class="size__value">50</span> %
                               </p>
                         </div>
-                        <div class="color">
-                              <label for="color">Choose 🖌️ Color:</label>
-                              <span class="color__input">
-                                    <input type="color" name="color" value="#ffc600">
-                                    <span color__value>dblack</span>
-                              </span>
+                        <div class="colors">
+                              <div class="color">
+                                    <label for="color">Choose 🖌️ Color:</label>
+                                    <span class="color__input">
+                                          <input type="color" name="color" value="#ffc600">
+                                          <button id="random" class="btn">
+                                                <span class="btnspan">Select Color</span>
+                                          </button>
+                                    </span>
+
+                              </div>
+                              <p>OR</p>
+                              <div class="random__btn">
+                                    <p>Select a Random Color:</p>
+                                    <button id="randomColor" class="btn">
+                                          <span class="btnspan">Random 🔀</span>
+                                    </button>
+                              </div>
                         </div>
-                        <div class="random__btn">
-                              <p>Random 🖌️ Colors:</p>
-                              <button id="random" class="btn">
-                                    <span class="btnspan">Random 🔀</span>
-                              </button>
-                        </div>
-                        <div class="settings__btn">
-                              <button id="eraser" class="btn">
-                                    <span class="btnspan">Eraser 🧽</span>
-                              </button>
-                              <button id="reset" class="btn">
-                                    <span class="btnspan">Reset ↩️</span>
-                              </button>
-                        </div>
+
+                        <button id="reset" class="btn">
+                              <span class="btnspan">Reset ↩️</span>
+                        </button>
+
 
                   </div>
                   <div class="board">
