@@ -35,15 +35,38 @@ footer {
 }
 
 .btn {
-      display: inline-block;
-      border: none;
+      background-image: linear-gradient(135deg, #008aff, #86d472);
       border-radius: 5px;
-      padding: .5rem 1rem;
-      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      box-sizing: border-box;
+      color: #ffffff;
+      display: block;
+      height: 40px;
+      font-weight: 600;
+      padding: 3px;
+      position: relative;
+      text-decoration: none;
+      width: 7em;
+      z-index: 2;
+      border: none;
 }
 
 .btn:hover {
-      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      color: #fff;
+}
+
+.btn .btnspan {
+      align-items: center;
+      background: #0e0e10;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      transition: background 0.5s ease;
+      width: 100%;
+}
+
+.btn:hover .btnspan {
+      background: transparent;
 }
 
 .container {
@@ -51,40 +74,49 @@ footer {
       max-width: 1024px;
       width: 100%;
       margin: 0 auto;
-      border: 2px solid brown;
+      /* border: 2px solid brown; */
       display: flex;
       justify-content: space-around;
 }
 
 .options {
-      border: 2px solid teal;
+      /* border: 2px solid teal; */
       flex: 1;
       padding: 3rem 1rem;
 }
 
 .board {
+      position: relative;
       background-color: #e5e7eb;
       border: 2px solid tan;
       display: grid;
-      flex: 2;
       margin: 1rem;
+      width: 500px;
+      height: 500px;
+}
+
+.grid {
+      outline: 1px solid #000;
 }
 
 .size,
 .color,
 .random__btn,
 .settings__btn {
-      border: 2px solid brown;
+      /* border: 2px solid brown; */
       margin-bottom: 3rem;
 }
 
-.size label, .color label, .random__btn p{
+.size label,
+.color label,
+.random__btn p {
       display: block;
       margin-bottom: .5rem;
       font-weight: 700;
 }
 
-.size__input, .color__input {
+.size__input,
+.color__input {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -95,8 +127,7 @@ footer {
       background: linear-gradient(from #06b6d4, to #3b82f6);
 }
 
-
-
-
-
-
+.settings__btn {
+      display: flex;
+      gap: 2rem;
+}
