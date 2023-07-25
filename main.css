@@ -130,27 +130,14 @@ footer {
       }
 
       .btn {
-
-            box-sizing: border-box;
-            color: #ffffff;
-            display: block;
-            height: 30px;
-            font-weight: 600;
             font-size: 10px;
-            padding: 3px;
-            position: relative;
-            text-decoration: none;
-            width: 7em;
-            z-index: 2;
-            border: none;
-            cursor: pointer;
       }
 
 
 
       .container {
-            min-height: 75vh;
-            max-width: 1024px;
+            min-height: 55vh;
+            max-width: 624px;
             width: 100%;
             margin: 0 auto;
             flex-direction: column;
@@ -161,6 +148,7 @@ footer {
             display: flex;
             flex-wrap: wrap;
             gap: 3rem;
+            position: relative;
       }
 
       .colors {
@@ -177,5 +165,10 @@ footer {
       .colors {
             /* border: 2px solid brown; */
             margin-bottom: 1rem;
+      }
+
+      #reset {
+            position: absolute;
+            top: 11rem
       }
 }
