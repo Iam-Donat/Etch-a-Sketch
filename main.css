@@ -1,17 +1,21 @@
+:root {
+      --font-color: #94a3b8;
+      --primary-color: #0f172a;
+      --secondary-color: #dc143c;
+      --secondary-color-two: #0d9488;
+}
+
 * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
 }
 
-html {
-      scroll-behavior: smooth;
-}
-
 body {
       font-family: 'Special Elite', cursive;
       background-color: #0f172a;
-      color: #94a3b8;
+      color: #dc143c;
+      height: 100vh;
 }
 
 a {
@@ -22,103 +26,23 @@ a {
 h1 {
       text-align: center;
       font-size: 2rem;
-      min-height: calc(5vh - .5rem);
-      margin-top: .5rem;
       padding-bottom: .5rem;
+      border: 2px solid brown;
 }
 
 footer {
-      min-height: 5rem;
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 4rem;
+      border: 2px solid brown;
 }
 
-.btn {
-      background-image: linear-gradient(135deg, #008aff, #86d472);
-      border-radius: 5px;
-      box-sizing: border-box;
-      color: #ffffff;
-      display: block;
-      height: 40px;
-      font-weight: 600;
-      padding: 3px;
-      position: relative;
-      text-decoration: none;
-      width: 7em;
-      z-index: 2;
-      border: none;
-      cursor: pointer;
-}
 
-.btn:hover {
-      color: #fff;
-}
-
-.btn .btnspan {
-      align-items: center;
-      background: #0e0e10;
-      border-radius: 5px;
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      transition: background 0.5s ease;
-      width: 100%;
-}
-
-.btn:hover .btnspan {
-      background: transparent;
-}
-
+/* --- container styling --- */
 .container {
-      min-height: 75vh;
       max-width: 1024px;
       width: 100%;
       margin: 0 auto;
-      /* border: 2px solid brown; */
-      display: flex;
-      justify-content: space-around;
-}
-
-.options {
-      /* border: 2px solid teal; */
-      flex: 1;
-      padding: 3rem 1rem;
-}
-
-.board {
+      border: 2px solid brown;
       position: relative;
-      background-color: #e5e7eb;
-      outline: 5px solid tan;
-      display: grid;
-      margin: 1rem;
-      width: 500px;
-      height: 500px;
-}
-
-
-.size,
-.colors {
-      /* border: 2px solid brown; */
-      margin-bottom: 3rem;
-}
-
-.size label,
-.size__input,
-.color label,
-.color__input,
-.color button,
-.colors p,
-.random__btn p {
-      display: block;
-      margin-bottom: .5rem;
-      font-weight: 700;
-}
-
-.size__input,
-.color__input {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
 }
