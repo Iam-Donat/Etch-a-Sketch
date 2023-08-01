@@ -8,6 +8,6 @@ Main takeaways from this project are that it helped solidify my understanding of
 
 ### Preview 👇🏾
 
-<img src="" >
+<img src="./img/Etch-A-Sketch.png" >
 
 <hr>

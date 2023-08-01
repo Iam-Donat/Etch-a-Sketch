@@ -105,15 +105,54 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
-      gap: .5rem;
-      border: 1px solid green;
 }
 
-.color input {
-      display: inline-block;
-      width: 2rem;
-      border: none;
-      border-radius: 50%;
-      background: none;
+@media only screen and (max-width : 568px) {
+
+      h1 {
+            font-size: 1.5rem;
+      }
+
+      .btn {
+            font-size: 10px;
+      }
+
+
+
+      .container {
+            min-height: 55vh;
+            max-width: 624px;
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: column;
+      }
+
+      .options {
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            position: relative;
+      }
+
+      .colors {
+            flex: 3;
+      }
+
+      .board {
+            order: 1;
+            width: 450px;
+            height: 400px;
+      }
+
+      .size,
+      .colors {
+            /* border: 2px solid brown; */
+            margin-bottom: 1rem;
+      }
+
+      #reset {
+            position: absolute;
+            top: 11.6rem
+      }
 }
