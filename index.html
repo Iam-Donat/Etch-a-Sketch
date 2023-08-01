@@ -27,16 +27,38 @@
 
             <!-- settings -->
             <div class="settings">
+                  <div>
+                        <p class="btn open">⚙️ Settings</p>
 
-                  <div class="buttons">
-                        <button id="reset" class="btn">
-                              <span class="btnspan">Reset ↩️</span>
-                        </button>
-                        <p>⚙️ Settings</p>
-                        <button id="reset" class="btn">
-                              <span class="btnspan">Reset ↩️</span>
-                        </button>
+                        <!-- settings options -->
+                        <div class="options">
+                              <div class="size">
+                                    <label for="size">Toogle
+                                          Size (1 - 100):
+                                    </label>
+                                    <input type="range" name="size" value="50" min="1" max="100" class="size__toogle">
+                                    <p>
+                                          Current Zoom:<span class="size__value"> 50</span>%
+                                    </p>
+                              </div>
+                              <div class="color">
+                                    <label for="size">Select Color:</label>
+                                    <span class="color__input">
+                                          <input type="color" name="color" value="#ffc600">
+                                          <button id="reset" class="btn">
+                                                Confirm
+                                          </button>
+                                    </span>
+                              </div>
+                        </div>
                   </div>
+                  <button id="reset" class="btn">
+                        Clear 🧹
+                  </button>
+
+                  <button id="reset" class="btn">
+                        Reset ↩️
+                  </button>
             </div>
 
             <!-- Sketch Board -->
@@ -52,28 +74,6 @@
                   &copy <span class="year"></span>.
             </p>
       </footer>
-
-      <!-- settings options -->
-      <div class="options">
-            <div class="size">
-                  <label for="size">Toogle
-                        Size:</label>
-                  <span>(1 - 100)</span>
-                  <input type="range" name="size" value="50" min="1" max="100" class="size__toogle">
-                  <p>
-                        Current Zoom:<span class="size__value"> 50</span> %
-                  </p>
-            </div>
-            <div class="color">
-                  <label for="size">Select Color:</label>
-                  <input type="color" name="color" value="#ffc600" class="color__input">
-                  <button id="reset" class="btn">
-                        <span class="btnspan">Confirm</span>
-                  </button>
-            </div>
-      </div>
-      </div>
-
 
       <div class="overlay"></div>
 
