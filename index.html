@@ -16,59 +16,68 @@
 </head>
 
 <body>
-      <div class="content">
+      <!-- Header 😂 -->
+      <header>
+            <img src="./" alt="" class="logo">
             <h1>Etch-A-Sketch 🖌️📄</h1>
-            <div class="container">
-                  <div class="options">
-                        <div class="size">
-                              <label for="size">Toogle
-                                    Zoom 🔎:</label>
-                              <span class="size__input">
-                                    <input type="range" name="size" value="50" min="1" max="100">
-                                    <span>(1 - 100)</span>
-                              </span>
-                              <p> Current Zoom:
-                                    <span class="size__value">50</span> %
-                              </p>
-                        </div>
-                        <div class="colors">
+      </header>
+
+      <!-- main content -->
+      <main class="container">
+
+            <!-- settings -->
+            <div class="settings">
+                  <div>
+                        <p class="btn open">⚙️ Settings</p>
+
+                        <!-- settings options -->
+                        <div class="options">
+                              <div class="size">
+                                    <label for="size">Toogle
+                                          Size (1 - 100):
+                                    </label>
+                                    <input type="range" name="size" value="50" min="1" max="100" class="size__toogle">
+                                    <p>
+                                          Current Zoom:<span class="size__value"> 50</span>%
+                                    </p>
+                              </div>
                               <div class="color">
-                                    <label for="color">Choose 🖌️ Color:</label>
+                                    <label for="size">Select Color:</label>
                                     <span class="color__input">
                                           <input type="color" name="color" value="#ffc600">
-                                          <button id="random" class="btn">
-                                                <span class="btnspan">Select Color</span>
+                                          <button id="reset" class="btn">
+                                                Confirm
                                           </button>
                                     </span>
-
-                              </div>
-                              <p>OR</p>
-                              <div class="random__btn">
-                                    <p>Select a Random Color:</p>
-                                    <button id="randomColor" class="btn">
-                                          <span class="btnspan">Random 🔀</span>
-                                    </button>
                               </div>
                         </div>
-
-                        <button id="reset" class="btn">
-                              <span class="btnspan">Reset ↩️</span>
-                        </button>
-
-
                   </div>
-                  <div class="board">
+                  <button id="reset" class="btn">
+                        Clear 🧹
+                  </button>
 
-                  </div>
+                  <button id="reset" class="btn">
+                        Reset ↩️
+                  </button>
+            </div>
+
+            <!-- Sketch Board -->
+            <div class="board">
 
             </div>
-            <footer>
-                  <p>
-                        <a href="https:iamntwali.netlify.app">Iam-Ntwali</a>
-                        &copy <span class="year"></span>.
-                  </p>
-            </footer>
-      </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+            <p>
+                  <a href="https:iamntwali.netlify.app">Iam-Ntwali</a>
+                  &copy <span class="year"></span>.
+            </p>
+      </footer>
+
+      <div class="overlay"></div>
+
+      <!-- Javascript -->
       <script src="./script.js"></script>
 </body>
 
