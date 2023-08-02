@@ -27,7 +27,6 @@ h1 {
       text-align: center;
       font-size: 2rem;
       padding-bottom: .5rem;
-      border: 2px solid brown;
 }
 
 .btn {
@@ -43,6 +42,7 @@ h1 {
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease-in-out;
+      cursor: pointer;
 }
 
 .btn:active {
@@ -53,7 +53,8 @@ footer {
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 4rem;
-      border: 2px solid brown;
+      padding: 1rem 0;
+      /* border: 2px solid brown; */
 }
 
 
@@ -62,33 +63,39 @@ footer {
       max-width: 1024px;
       width: 100%;
       margin: 0 auto;
-      border: 2px solid brown;
+      /* border: 2px solid brown; */
       position: relative;
 }
 
+/* --- settings --- */
 .settings {
       position: relative;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 5rem;
       align-items: flex-start;
+      margin-top: 2rem;
 }
 
 .open {
       background: var(--secondary-color-two);
       border: none;
       color: var(--primary-color);
+      cursor: pointer;
+
 }
 
 .open:active {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border: 2px solid var(--primary-color);
 }
 
 .options {
+      position: absolute;
       border: 1px solid green;
       padding: 1rem;
       background-color: #1e293b;
       border-radius: 5px;
+      z-index: 999;
 }
 
 .size,
@@ -105,54 +112,29 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-around;
+      gap: .5rem;
+      border: 1px solid green;
 }
 
-@media only screen and (max-width : 568px) {
+.color input {
+      display: inline-block;
+      width: 2rem;
+      border: none;
+      border-radius: 50%;
+      background: none;
+}
 
-      h1 {
-            font-size: 1.5rem;
-      }
+/* -------------------------- */
 
-      .btn {
-            font-size: 10px;
-      }
-
-
-
-      .container {
-            min-height: 55vh;
-            max-width: 624px;
-            width: 100%;
-            margin: 0 auto;
-            flex-direction: column;
-      }
-
-      .options {
-            order: 2;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            position: relative;
-      }
-
-      .colors {
-            flex: 3;
-      }
-
-      .board {
-            order: 1;
-            width: 450px;
-            height: 400px;
-      }
-
-      .size,
-      .colors {
-            /* border: 2px solid brown; */
-            margin-bottom: 1rem;
-      }
-
-      #reset {
-            position: absolute;
-            top: 11.6rem
-      }
+/* --- board --- */
+.board {
+      position: relative;
+      border: 2px solid var(--secondary-color);
+      background-color: #f8f8f8;
+      display: grid;
+      max-width: 650px;
+      width: 100%;
+      aspect-ratio: 1/1;
+      margin: 1rem auto;
 }
